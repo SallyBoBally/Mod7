@@ -1,10 +1,11 @@
-const { useState, useEffect } = require("react");
+import React from 'react';
+import { useEmoji }  from './EmojiContext';
+import { useData } from './hooks/useData';
 
 const currencies = ['USD', 'AUD', 'NZD', 'GBP', 'EUR', 'SGD'];
 
 function BitcoinRates() {
     const [currancy, setCurrancy] = useState(currencies[0]);
-    const [price, setPrice] = useState(null);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
 }
@@ -44,17 +45,17 @@ function BitcoinRates() {
             {curr}
         </option>
     ));
-    return (
-        <div className="BitconinRates componentBox">
-            <h1>Bitcoin Rate</h1>
-            <label>
-                Currency:
-                <select value={currency} onChange={e => setCurrency(e.target.value)}>
-                    {options}
-                </select>
-            </label>
-        </div>
-    );
-}
+        return (
+            <div className="BitcoinRates">
+                <h1>Bitcoin Rate</h1>
+                <label>
+                    Currency:
+                    <select value={currency} onChange={e => setCurrency(e.target.value)}>
+                        {options}
+                    </select>
+                </label>
+            </div>
+        );
+
 
 export default BitcoinRates
