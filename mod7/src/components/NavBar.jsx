@@ -1,3 +1,6 @@
+import React from "react";
+import { AppBar, Typography, Grid, Cards } from "@mui/material";
+
 export default function NavBar() {
     const {theme} = useContext(MyThemeContext);
     
