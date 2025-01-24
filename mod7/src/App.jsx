@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import BitcoinRates from './components/BitcoinRates'
-import { EmojiProvider } from './components/Emoji'
+import { EmojiProvider } from './components/EmojiContext'
 import NavBar from './components/NavBar'
 import Homepage from './components/Home'
 

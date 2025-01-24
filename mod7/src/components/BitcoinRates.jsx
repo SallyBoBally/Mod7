@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Typography, select, } from '@mui/material';
-import BitcoinRates from '../components/BitcoinRates';
 
 const currencies = ['USD', 'AUD', 'NZD', 'GBP', 'EUR', 'SGD'];
 
@@ -58,4 +57,4 @@ function BitcoinRates() {
         );
 
 
-export default BitcoinRates
+export default BitcoinRates;
